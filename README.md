@@ -3,11 +3,11 @@
 
 Simple blockchain http and tcp server.
 
-## How tor run?
+## How to run?
 
 #### Install it
 
-``` go get github.com/minhajuddinkhan/blockchainv2 ```
+``` go get github.com/minhajuddinkhan/blockchainv2/server/blockchainv2 ```
 
 #### Start the server 
 
