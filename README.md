@@ -18,8 +18,13 @@ Simple blockchain http and tcp server.
 
 #### Through nc
 
-nc localhost 3000
+``` nc localhost 3000 ```
 
 #### Through cURL
 
-curl http://localhost:8080
+``` curl http://localhost:8080 ```
+
+
+## Example
+
+![alt text](https://files.fm/thumb_show.php?i=xh3j5tux&view)
