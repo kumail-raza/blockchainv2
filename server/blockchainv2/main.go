@@ -19,12 +19,15 @@ import (
 
 func main() {
 
+	var httpAddr, tcpAddr string
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal(err)
+		httpAddr = "8080"
+		tcpAddr = "3000"
+	} else {
+		httpAddr = os.Getenv("HTTP_ADDR")
+		tcpAddr = os.Getenv("TCP_ADDR")
 	}
-	httpAddr := os.Getenv("HTTP_ADDR")
-	tcpAddr := os.Getenv("TCP_ADDR")
 
 	r := mux.NewRouter()
 	genesisBlock := blockchainv2.Block{
